@@ -1,0 +1,30 @@
+<!DOCTYPE RCC>
+<RCC>
+    <qresource prefix="/">
+        <file alias="seed">icons/seed.ico</file>
+        <file alias="seed1">icons/seed1.ico</file>
+
+        <file alias="camera_off">icons/camera_off.png</file>
+        <file alias="camera_on">icons/camera_on.png</file>
+
+        <file alias="export1">icons/export1.png</file>
+        <file alias="export2">icons/export2.png</file>
+        <file alias="export3">icons/export3.png</file>
+        <file alias="export4">icons/export4.png</file>
+
+        <file alias="plug_tray">icons/plug_tray.png</file>
+        <file alias="seed_type">icons/seed_type.png</file>
+        <file alias="statistics">icons/statistics.png</file>
+
+        <file alias="settings1">icons/settings1.png</file>
+        <file alias="settings2">icons/settings2.png</file>
+        <file alias="settings3">icons/settings3.png</file>
+        <file alias="settings4">icons/settings4.png</file>
+        <file alias="settings5">icons/settings5.png</file>
+
+
+        <file alias="eggplant">veges/eggplant.png</file>
+        <file alias="pepper">veges/pepper.png</file>
+        <file alias="tomato">veges/tomato.png</file>
+    </qresource>
+</RCC>

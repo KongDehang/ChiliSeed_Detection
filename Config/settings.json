@@ -1,0 +1,14 @@
+{
+    "camera_on": 0,
+    "selected_seed": 0,
+    "tray_size": 0,
+    "tray_shape": 0,
+    "tray_color": "white",
+    "detection_interval": 1,
+    "d": {
+        "home": [
+            "green",
+            "red"
+        ]
+    }
+}
