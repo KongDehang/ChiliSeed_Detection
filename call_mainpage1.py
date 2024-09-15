@@ -9,6 +9,8 @@ from queue import Queue
 
 import cv2
 import torch
+import zmq
+import base64
 import numpy as np
 from PyQt5 import QtGui, QtWidgets
 from PyQt5.QtCore import pyqtSignal, Qt, QTimer
@@ -29,14 +31,17 @@ frame_queue = Queue(maxsize=1)
 frame_processed = None
 global_data_array = np.array([[1,1,1], [2,2,2]])
 before_data_array = np.array([[1,1,1], [2,2,2]])
+# 初始化 ZeroMQ
+context = zmq.Context()
+socket = context.socket(zmq.SUB)
+socket.connect("tcp://172.20.49.47:5555")
+socket.subscribe("")
 
 # ignore the "Sig..."
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
-
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-
 
 
 class VideoThread(threading.Thread):
